@@ -1,0 +1,67 @@
+name: Bug(offer bounty)
+# 提供赏金，报告一个 bug，以要求修复或改进。
+description: Offer bounty, report a bug, request fixes or improvements.
+title: "[※Bug] "
+labels:
+  - bug
+  - bounty
+body:
+  # 你做了什么？
+  - type: input
+    id: what-you-did
+    attributes:
+      label: What you did?
+      # 打开什么页面，做了什么操作，请使用列表，分步描述。
+      description: What page you opened, what operation you did, please use a list to describe step by step.
+      placeholder: >
+        1. Opened the page of ...
+        2. Clicked the button of ...
+        3. ...
+  # 你期望发生什么？
+  - type: input
+    id: what-you-expected
+    attributes:
+      label: What you expected?
+      # 你期望发生什么？请使用列表，分步描述。
+      description: What you expected? Please use a list to describe step by step.
+      placeholder: >
+        1. The page should ...
+        2. The button should ...
+        3. ...
+  # 你看到了什么？
+  - type: input
+    id: what-you-saw
+    attributes:
+      label: What you saw?
+      # 你看到了什么？请使用列表，分步描述。
+      description: What you saw? Please use a list to describe step by step.
+      placeholder: >
+        1. The page ...
+        2. The button ...
+        3. ...
+  # 修复建议
+  - type: input
+    id: fix-suggestion
+    attributes:
+      label: Fix Suggestion
+      # 你认为应该如何修复？请使用列表，分步描述。
+      description: How do you think it should be fixed? Please use a list to describe step by step.
+      placeholder: >
+        1. The page should ...
+        2. The button should ...
+        3. ...
+  # 金额
+  - type: input
+    id: bounty-amount
+    attributes:
+      label: Bounty Amount
+      placeholder: 100
+  # 货币
+  - type: dropdown
+    id: bounty-currency
+    attributes:
+      label: Bounty Currency
+      options:
+        - USD
+        - CNY
+        - USDT
