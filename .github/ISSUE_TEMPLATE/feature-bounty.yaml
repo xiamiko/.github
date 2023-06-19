@@ -63,5 +63,18 @@ body:
         1. ...
         2. ...
         3. ...
-  
-  
+  # 金额
+  - type: input
+    id: bounty-amount
+    attributes:
+      label: Bounty Amount
+      placeholder: "0.00"
+  # 货币
+  - type: dropdown
+    id: bounty-currency
+    attributes:
+      label: Bounty Currency
+      options:
+        - USD
+        - CNY
+        - USDT
