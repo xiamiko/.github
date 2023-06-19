@@ -4,6 +4,7 @@ description: Provide bounty to implement or improve a feature.
 title: "[※Feature] "
 labels:
   - feature
+  - bounty
 body:
   # 你的平台
   - type: dropdown
