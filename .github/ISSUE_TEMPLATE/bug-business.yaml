@@ -7,7 +7,7 @@ labels:
   - bounty
 body:
   # 你做了什么？
-  - type: input
+  - type: textarea
     id: what-you-did
     attributes:
       label: What you did?
@@ -18,7 +18,7 @@ body:
         2. Clicked the button of ...
         3. ...
   # 你期望发生什么？
-  - type: input
+  - type: textarea
     id: what-you-expected
     attributes:
       label: What you expected?
@@ -29,7 +29,7 @@ body:
         2. The button should ...
         3. ...
   # 你看到了什么？
-  - type: input
+  - type: textarea
     id: what-you-saw
     attributes:
       label: What you saw?
@@ -40,7 +40,7 @@ body:
         2. The button ...
         3. ...
   # 修复建议
-  - type: input
+  - type: textarea
     id: fix-suggestion
     attributes:
       label: Fix Suggestion
