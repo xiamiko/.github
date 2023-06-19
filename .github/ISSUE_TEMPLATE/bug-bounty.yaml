@@ -1,11 +1,26 @@
-name: Bug(offer bounty)
+name: Bug(provide bounty)
 # 提供赏金，报告一个 bug，以要求修复或改进。
-description: Offer bounty, report a bug, request fixes or improvements.
+description: Provide bounty, report a bug, request fixes or improvements.
 title: "[※Bug] "
 labels:
   - bug
   - bounty
 body:
+  # 你的平台
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Your Platform
+      # 你使用的是哪个平台？
+      description: Which platform do you use?
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Android
+        - iOS
+        - Browser
+        - Other
   # 你做了什么？
   - type: textarea
     id: what-you-did

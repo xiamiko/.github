@@ -4,6 +4,21 @@ title: "[BUG] "
 labels:
   - bug
 body:
+  # 你的平台
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Your Platform
+      # 你使用的是哪个平台？
+      description: Which platform do you use?
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Android
+        - iOS
+        - Browser
+        - Other
   # 你做了什么？
   - type: textarea
     id: what-you-did

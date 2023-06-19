@@ -1,0 +1,67 @@
+name: Feature(provide bounty)
+# 提供赏金，以实现或改进一个功能。
+description: Provide bounty to implement or improve a feature.
+title: "[※Feature] "
+labels:
+  - feature
+body:
+  # 你的平台
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Your Platform
+      # 你使用的是哪个平台？
+      description: Which platform do you use?
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Android
+        - iOS
+        - Browser
+        - Other
+  # 特性类型
+  - type: dropdown
+    id: feature-type
+    attributes:
+      label: Feature Type
+      # 你请求的是哪种类型的特性？
+      description: Which type of feature do you request?
+      options:
+        - New Feature
+        - Improvement
+  # 此功能解决什么问题
+  - type: textarea
+    id: what-problem-solved
+    attributes:
+      label: What problem does this feature solve?
+      # 请描述此功能解决了什么问题。
+      description: Please describe what problem this feature solves.
+      placeholder: >
+        1. ...
+        2. ...
+        3. ...
+  # 此功能如何使用
+  - type: textarea
+    id: how-to-use
+    attributes:
+      label: How to use this feature?
+      # 请描述如何使用此功能。
+      description: Please describe how to use this feature.
+      placeholder: >
+        1. ...
+        2. ...
+        3. ...
+  # 没有这个特性时，你是如何解决这个问题的
+  - type: textarea
+    id: how-to-solve-without-this-feature
+    attributes:
+      label: How do you solve this problem without this feature?
+      # 请描述没有这个特性时，你是如何解决这个问题的。
+      description: Please describe how you solve this problem without this feature.
+      placeholder: >
+        1. ...
+        2. ...
+        3. ...
+  
+  
